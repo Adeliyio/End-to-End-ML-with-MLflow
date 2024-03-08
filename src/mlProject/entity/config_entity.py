@@ -10,3 +10,13 @@ class DataIngestionConfig:
     source_URL: str       # URL from where the data will be downloaded
     local_data_file: Path  # Path to the local data file
     unzip_dir: Path       # Directory where the data will be extracted after downloading
+
+
+@dataclass(frozen=True)
+class DataValidationConfig:
+    """Configuration class for data ingestion."""
+
+    root_dir: Path        # Root directory where data will be stored
+    STATUS_FILE: str
+    unzip_data_dir: Path
+    all_schema: dict
