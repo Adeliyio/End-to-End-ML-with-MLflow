@@ -1,0 +1,15 @@
+# Configuration file for the project
+
+# Root directory for storing data
+artifacts_root: artifacts
+
+# Configuration for data ingestion
+data_ingestion:
+  # Root directory for data ingestion
+  root_dir: artifacts/data_ingestion
+  # URL to download the data from
+  source_URL: https://github.com/Adeliyio/Fake_News_Detection/raw/main/winequality-data.zip
+  # Local file path where the downloaded data will be stored
+  local_data_file: artifacts/data_ingestion/data.zip
+  # Directory where the downloaded data will be extracted
+  unzip_dir: artifacts/data_ingestion
