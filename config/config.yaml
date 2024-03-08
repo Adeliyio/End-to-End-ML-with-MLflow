@@ -27,3 +27,10 @@ data_validation:
   STATUS_FILE: artifacts/data_validation/status.txt
 
  
+ 
+ # Configuration for data Transformation
+data_transformation:
+  # Root directory for data Transformation
+  root_dir: artifacts/data_transformation
+  # Directory where the data will be extracted
+  data_path: artifacts/data_ingestion/winequality-red.csv

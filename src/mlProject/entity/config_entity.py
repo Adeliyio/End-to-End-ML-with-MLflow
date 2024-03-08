@@ -20,3 +20,17 @@ class DataValidationConfig:
     STATUS_FILE: str
     unzip_data_dir: Path
     all_schema: dict
+
+
+# Data Transformation configuration entity
+@dataclass(frozen=True)
+class DataTransformationConfig:
+    """
+    Configuration class for Data Transformation.
+
+    Attributes:
+    - root_dir (Path): The root directory for data transformation.
+    - data_path (Path): The path to the data.
+    """
+    root_dir: Path
+    data_path: Path
