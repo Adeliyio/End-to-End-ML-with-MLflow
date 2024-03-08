@@ -30,7 +30,7 @@ class DataIngestionTrainingPipeline:
 
 if __name__ == '__main__':
     try:
-        # Log start of the data ingestion stage
+        #Log start of the data ingestion stage
         logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
 
         # Instantiate the DataIngestionTrainingPipeline object
@@ -45,3 +45,7 @@ if __name__ == '__main__':
         # Log any exceptions that occur during the pipeline execution
         logger.exception(e)
         raise e  # Re-raise the exception for further handling
+    
+
+
+ 
