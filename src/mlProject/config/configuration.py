@@ -67,7 +67,7 @@ class ConfigurationManager:
         return data_validation_config
 
 
-def get_data_transformation_config(self) -> DataTransformationConfig:
+    def get_data_transformation_config(self) -> DataTransformationConfig:
         config = self.config.data_transformation
 
         create_directories([config.root_dir])
@@ -77,4 +77,4 @@ def get_data_transformation_config(self) -> DataTransformationConfig:
             data_path=config.data_path,
         )
 
-        return data_transformation_config
+        return data_transformation_config 
